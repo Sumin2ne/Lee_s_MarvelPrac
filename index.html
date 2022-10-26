@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <title>.: Marvel Characters :.</title>
 </head>
@@ -20,48 +20,57 @@
         <nav id="character-nav">
             <ul class="characters">
                 <li>
-                    <div class="sprite" id="cap"></div>
-                    <div class="red-bumper"></div>
-                    <h5> Captain America </h5>
-                    <!--<img src="images/cap.jpeg" alt="captain america">-->
+                    <a href="#lightBox">
+                        <div class="sprite" id="cap"></div>
+                        <div class="red-bumper"></div>
+                        <h5> Captain America </h5>
+                    </a>
+                
                 </li>
 
                 <li>
+                    <a href="#lightbox">
                     <div class="sprite" id="carol"></div>
                     <div class="red-bumper"></div>
                     <h5> Captain Marvel </h5>
-                    <!--<img src="images/carol.jpeg" alt="captain marvel">-->
+                    </a>
                 </li>
 
                 <li>
-                    <div class="sprite" id="clint"></div>
-                    <div class="red-bumper"></div>
-                    <h5> Hawkeye </h5>
-                    <!--<img src="images/clint.jpeg" alt="hawkeye">-->
+                    <a href="#lightbox">
+                        <div class="sprite" id="clint"></div>
+                        <div class="red-bumper"></div>
+                        <h5> Hawkeye </h5>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="sprite" id="hulk"></div>
-                    <div class="red-bumper"></div>
-                    <h5> Hulk </h5>
-                    <!--<img src="images/hulk.jpeg" alt="hulk">-->
+                    <a href="#lightbox">
+                        <div class="sprite" id="hulk"></div>
+                        <div class="red-bumper"></div>
+                        <h5> Hulk </h5>
+                    </a>
                 </li>
 
                 <li>
-                    <div class="sprite" id="thor"></div>
-                    <div class="red-bumper"></div>
-                    <h5> Thor </h5>
-                    <!--<img src="images/thor.jpeg" alt="thor">-->
+                    <a href="#lightBox2">
+                        <div class="sprite" id="thor"></div>
+                        <div class="red-bumper"></div>
+                        <h5> Thor </h5>
+                    </a>
                 </li>
                 
                 <li>
-                    <div class="sprite" id="bw"></div>
-                    <div class="red-bumper"></div>
-                    <h5> Black Window </h5>
-                    <!--<img src="images/widow.jpeg" alt="black window">-->
+                    <a href="#lightbox">
+                        <div class="sprite" id="bw"></div>
+                        <div class="red-bumper"></div>
+                        <h5> Black Window </h5>
+                    </a>
                 </li>
             </ul>
         </nav>
+
+
 
         <article>
             <h3>Choose Your Hero!</h3>
@@ -69,8 +78,46 @@
         </article>
     </main>
 
-   <footer class="sticky_footer">
+
+
+<footer class="sticky_footer">
         <h3>All images &copy; Marvel</h3>
-   </footer>
+</footer>
+
+
+<!-- put the lighttbox at the bottom of the stack (which is thr top when it get rendered) -->
+<section class="lightbox" id="lightBox">
+        <a href="" class="lb_close">X</a>
+
+        <article>
+            <h3 class="lb_heading">Captain America - The first Avengers</h3>
+            <p class="lb_text">
+                
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae laudantium nihil, ad voluptatibus sed vel exercitationem ipsum consectetur suscipit perspiciatis quisquam, officia facilis provident eius non perferendis, doloremque corporis quod?
+            </p>
+            <p class="lb_text">
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat reiciendis esse suscipit, error itaque nobis sapiente totam distinctio tempore optio debitis aliquam eveniet soluta pariatur sed magnam, ut id unde?
+            </p>
+        </article>
+</section>
+
+<!-- thor's lightbox -->
+<section class="lightbox" id="lightBox2">
+    <a href="" class="lb_close">X</a>
+
+    <article>
+        <h3 class="lb_heading">Captain America - The first Avengers</h3>
+        <p class="lb_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae laudantium nihil, ad voluptatibus sed vel exercitationem ipsum consectetur suscipit perspiciatis quisquam, officia facilis provident eius non perferendis, doloremque corporis quod?
+        </p>
+        <p class="lb_text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat reiciendis esse suscipit, error itaque nobis sapiente totam distinctio tempore optio debitis aliquam eveniet soluta pariatur sed magnam, ut id unde?
+        </p>
+    </article>
+</section>
+
+
+
 </body>
 </html>
