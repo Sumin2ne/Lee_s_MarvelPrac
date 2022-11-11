@@ -39,21 +39,38 @@ header{
 .characters {list-style: none;}
 
 .characters li { 
+    position: relative;
     display: inline-block;
     height: 220px;
     margin: 10px 8px;
     background-color: black;
     text-align: left;
+
     overflow: hidden;
+    cursor: pointer;
 }
 
+.characters li:hover .red-bumper {height: 70px;}
+
 .characters li h5{
+    position: relative;
     padding: 14px 8px;
     color: white;
+
+    z-index: 50;
 }
 
 .characters li a {text-decoration: none;}
 
+
+.red-bumper {
+    position: absolute;
+    width: 100%;
+    height: 6px;  
+    background-color: red;
+
+    transition: all 0.5s ease;
+}
 .characters li img{ 
     width:  150px; 
     cursor: pointer;}
@@ -73,7 +90,7 @@ header{
 #thor {background-position: -600px 0;}
 #bw {background-position: -750px 0;}
 
-.red-bumper { height: 6px;  background-color: red;}
+
 
 
 article {padding: 20px;}
@@ -89,20 +106,20 @@ article p{
     line-height: 1.2;
     text-align: center;
     margin: 0 auto;
- }
+}
 
- footer{
+footer{
     color: white;
     padding: 22px 0;
     text-align: center;
- }
+}
 
 .sticky_footer {
     position: sticky;
     top: 100%;
     height: 80px;
     background-color: rgb(40, 37, 37);
- }
+}
 
 /* lightbox styles */
 .lightbox {
@@ -119,6 +136,8 @@ article p{
 
     background-position: 40px bottom;
     background-size: 55vh;
+
+    z-index: 500;
 
 }
 
